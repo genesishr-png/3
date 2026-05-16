@@ -188,7 +188,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scale(1.4); /* Zoom na árvore pura */
+  transform: scale(1.15); /* Zoom reduzido para a nova imagem centralizada */
   transition: transform 0.3s var(--transition);
 }
 
@@ -1654,7 +1654,7 @@ body {
   padding: 0; /* Removido padding para o zoom preencher tudo */
   border: 1px solid rgba(200,168,75,0.2);
   box-shadow: 0 0 30px rgba(0,0,0,0.3);
-  transform: scale(1.1); /* Leve zoom no rodapé também */
+  transform: scale(1.05); /* Zoom reduzido para a nova imagem centralizada */
 }
 
 .physis-text {
