@@ -171,13 +171,9 @@ body {
 
 /* Physis Juris logo in navbar */
 .nav-physis-logo {
-  width: 48px;
-  height: 48px;
+  height: 60px;
+  width: auto;
   object-fit: contain;
-  border-radius: 50%;
-  background: rgba(200,168,75,0.08);
-  padding: 4px;
-  border: 1px solid rgba(200,168,75,0.2);
 }
 
 .nav-links {
@@ -1507,50 +1503,12 @@ body {
 }
 
 .physis-tree {
-  width: 150px;
-  height: 150px;
+  width: 220px;
+  height: auto;
   object-fit: contain;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.06);
-  padding: 10px;
 }
 
-.physis-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
 
-.physis-name {
-  font-family: 'Cinzel', serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #d4b97a;
-  letter-spacing: 0.2em;
-}
-
-.physis-group-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  width: 100%;
-}
-
-.physis-line {
-  flex: 1;
-  height: 1px;
-  background: #C8A84B;
-  opacity: 0.5;
-}
-
-.physis-group-word {
-  font-family: var(--font-display);
-  font-size: 0.65rem;
-  font-weight: 600;
-  color: #C8A84B;
-  letter-spacing: 0.3em;
-}
 
 .physis-authors {
   font-size: 0.73rem;
