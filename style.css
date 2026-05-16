@@ -1284,67 +1284,147 @@ body {
   margin-right: auto;
 }
 
-/* Guarantee Seal */
+/* Guarantee Seal — Iconic Medal */
 .guarantee-seal {
-  max-width: 480px;
-  margin: 28px auto 0;
+  max-width: 520px;
+  margin: 36px auto 0;
 }
 
 .guarantee-seal-inner {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 20px 24px;
-  background: rgba(52,211,153,0.06);
-  border: 1px solid rgba(52,211,153,0.25);
-  border-radius: var(--radius-md);
+  gap: 24px;
+  padding: 24px 28px;
+  background: linear-gradient(135deg, rgba(52,211,153,0.07) 0%, rgba(52,211,153,0.03) 100%);
+  border: 1px solid rgba(52,211,153,0.3);
+  border-radius: var(--radius-lg);
   text-align: left;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 30px rgba(52,211,153,0.08);
-  transition: box-shadow 0.3s ease;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 0 40px rgba(52,211,153,0.08), inset 0 1px 0 rgba(52,211,153,0.1);
+  transition: all 0.4s var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.guarantee-seal-inner::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle, rgba(52,211,153,0.12) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .guarantee-seal-inner:hover {
-  box-shadow: 0 0 40px rgba(52,211,153,0.15);
+  border-color: rgba(52,211,153,0.5);
+  box-shadow: 0 0 60px rgba(52,211,153,0.15), inset 0 1px 0 rgba(52,211,153,0.15);
+  transform: translateY(-2px);
 }
 
-.guarantee-seal-icon {
+/* Circular badge / medal */
+.gseal-badge {
   position: relative;
   flex-shrink: 0;
+  width: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.guarantee-days {
+.gseal-ring {
   position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  animation: sealSpin 20s linear infinite;
+}
+
+@keyframes sealSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.gseal-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  gap: 1px;
+}
+
+.gseal-number {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 2.6rem;
   font-weight: 900;
   color: #34D399;
   line-height: 1;
-  margin-top: 4px;
+  text-shadow: 0 0 20px rgba(52,211,153,0.5);
 }
 
+.gseal-unit {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #34D399;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.gseal-sub {
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: rgba(52,211,153,0.6);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* Text side */
 .guarantee-seal-text {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 }
 
 .guarantee-title {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: #34D399;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 
 .guarantee-desc {
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   color: var(--text-secondary);
-  line-height: 1.55;
+  line-height: 1.6;
 }
+
+.guarantee-desc strong {
+  color: var(--text-primary);
+}
+
+.guarantee-badge-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #34D399;
+  background: rgba(52,211,153,0.1);
+  border: 1px solid rgba(52,211,153,0.2);
+  padding: 4px 12px;
+  border-radius: 100px;
+  width: fit-content;
+}
+
 
 .includes-title {
   font-size: 1rem;
