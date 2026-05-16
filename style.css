@@ -1648,13 +1648,12 @@ body {
 .physis-tree {
   width: 240px;
   height: 240px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 50%;
   background: rgba(255,255,255,0.06);
-  padding: 0; /* Removido padding para o zoom preencher tudo */
+  padding: 12px;
   border: 1px solid rgba(200,168,75,0.2);
   box-shadow: 0 0 30px rgba(0,0,0,0.3);
-  transform: scale(1.05); /* Zoom reduzido para a nova imagem centralizada */
 }
 
 .physis-text {
