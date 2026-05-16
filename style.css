@@ -1595,7 +1595,7 @@ body {
 
 .faq-question {
   width: 100%;
-  padding: 20px 0;
+  padding: 24px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1639,7 +1639,7 @@ body {
 }
 
 .faq-answer-inner {
-  padding: 0 0 24px 0;
+  padding: 0 30px 30px 30px;
   color: var(--text-secondary);
   line-height: 1.8;
   font-size: 0.95rem;
