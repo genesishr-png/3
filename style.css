@@ -171,8 +171,8 @@ body {
 
 /* Physis Juris logo in navbar */
 .nav-physis-logo {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
   border-radius: 50%;
   background: rgba(200,168,75,0.12);
@@ -1621,8 +1621,8 @@ body {
 }
 
 .physis-tree {
-  width: 160px;
-  height: 160px;
+  width: 240px;
+  height: 240px;
   object-fit: contain;
   border-radius: 50%;
   background: rgba(255,255,255,0.06);
@@ -1669,11 +1669,24 @@ body {
 }
 
 .physis-authors {
-  font-size: 0.73rem;
+  font-size: 0.8rem;
   color: #8fa3c4;
   font-style: italic;
   letter-spacing: 0.04em;
   margin-top: 2px;
+}
+
+.physis-email {
+  font-size: 0.85rem;
+  color: var(--accent-yellow);
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  margin-top: 4px;
+}
+
+.physis-email:hover {
+  opacity: 1;
 }
 
 /* ===================== FAQ SECTION ===================== */
