@@ -1523,11 +1523,11 @@ body {
 }
 
 .physis-name {
-  font-family: var(--font-display);
-  font-size: 1rem;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #d4b97a;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
 }
 
 .physis-group-row {
