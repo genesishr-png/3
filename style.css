@@ -23,7 +23,7 @@
   --radius-md: 16px;
   --radius-lg: 24px;
   --radius-xl: 32px;
-  --section-pad: clamp(80px, 10vw, 140px);
+  --section-pad: clamp(40px, 6vw, 70px);
   --transition: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -73,7 +73,7 @@ body {
   padding: 0 clamp(20px, 5vw, 60px);
 }
 
-.section-header { text-align: center; margin-bottom: 60px; }
+.section-header { text-align: center; margin-bottom: 30px; }
 
 .section-tag {
   display: inline-block;
