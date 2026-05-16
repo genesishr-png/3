@@ -1284,6 +1284,68 @@ body {
   margin-right: auto;
 }
 
+/* Guarantee Seal */
+.guarantee-seal {
+  max-width: 480px;
+  margin: 28px auto 0;
+}
+
+.guarantee-seal-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  background: rgba(52,211,153,0.06);
+  border: 1px solid rgba(52,211,153,0.25);
+  border-radius: var(--radius-md);
+  text-align: left;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(52,211,153,0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.guarantee-seal-inner:hover {
+  box-shadow: 0 0 40px rgba(52,211,153,0.15);
+}
+
+.guarantee-seal-icon {
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guarantee-days {
+  position: absolute;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 900;
+  color: #34D399;
+  line-height: 1;
+  margin-top: 4px;
+}
+
+.guarantee-seal-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.guarantee-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #34D399;
+  letter-spacing: 0.02em;
+}
+
+.guarantee-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
 .includes-title {
   font-size: 1rem;
   font-weight: 600;
