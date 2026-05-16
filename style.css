@@ -1714,6 +1714,123 @@ body {
   opacity: 1;
 }
 
+/* ===================== BONUS SECTION ===================== */
+.bonus-box {
+  margin-top: 40px;
+  padding: 30px;
+  border: 1px solid rgba(250, 204, 21, 0.3);
+  background: linear-gradient(135deg, rgba(20, 25, 45, 0.7) 0%, rgba(10, 15, 30, 0.8) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.bonus-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--accent-yellow);
+  color: #000;
+  padding: 6px 16px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom-left-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 2;
+  box-shadow: -2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.bonus-inner {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.bonus-image-side {
+  flex: 0 0 140px;
+  position: relative;
+}
+
+.bonus-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.bonus-image-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(250,204,21,0.15) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.bonus-info-side {
+  flex: 1;
+  text-align: left;
+}
+
+.bonus-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  color: var(--accent-yellow);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.bonus-subtitle {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.bonus-features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.b-feat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+@media (max-width: 768px) {
+  .bonus-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bonus-info-side {
+    text-align: center;
+  }
+  .bonus-image-side {
+    flex: 0 0 180px;
+    width: 180px;
+    margin: 0 auto;
+  }
+  .bonus-badge {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+
 /* ===================== FAQ SECTION ===================== */
 .faq-section {
   padding: 100px 0;
