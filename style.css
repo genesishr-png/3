@@ -171,13 +171,14 @@ body {
 
 /* Physis Juris logo in navbar */
 .nav-physis-logo {
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
-  border-radius: 50%;
-  background: rgba(200,168,75,0.08);
-  padding: 4px;
-  border: 1px solid rgba(200,168,75,0.2);
+  transition: transform 0.3s var(--transition);
+}
+
+.nav-logo:hover .nav-physis-logo {
+  transform: scale(1.08);
 }
 
 .nav-links {
@@ -1613,12 +1614,10 @@ body {
 }
 
 .physis-tree {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   object-fit: contain;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.06);
-  padding: 10px;
+  /* Removido circularidade para a nova logo */
 }
 
 .physis-text {
