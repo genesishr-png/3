@@ -1200,6 +1200,71 @@ body {
   margin-bottom: 28px;
 }
 
+/* Discount / Offer styles */
+.price-discount-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  background: var(--gradient-brand);
+  border-radius: 100px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #000;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  animation: glow-pulse 2s ease-in-out infinite;
+  box-shadow: 0 0 24px rgba(250,204,21,0.35);
+}
+
+.price-original-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.price-original-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.price-original {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-decoration: line-through;
+  text-decoration-color: rgba(239,68,68,0.7);
+  text-decoration-thickness: 2px;
+}
+
+.price-by-row {
+  margin-bottom: 4px;
+}
+
+.price-by-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.price-economy {
+  font-size: 0.9rem;
+  color: var(--accent-green);
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding: 8px 18px;
+  background: rgba(52,211,153,0.08);
+  border: 1px solid rgba(52,211,153,0.2);
+  border-radius: 100px;
+  display: inline-block;
+}
+
 .guarantee-row {
   display: flex;
   align-items: center;
