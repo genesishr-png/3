@@ -260,6 +260,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const bentoGrid = document.querySelector('.bento-grid');
   if (bentoGrid) bentoObserver.observe(bentoGrid);
 
+  /* ───────────────────────── FAQ ACCORDION ───────────────────────── */
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+      const isOpen = item.classList.contains('active');
+
+      // Fechar todos antes de abrir o novo (opcional, para foco)
+      faqItems.forEach(i => i.classList.remove('active'));
+
+      if (!isOpen) {
+        item.classList.add('active');
+      }
+    });
+  });
+
   console.log('%c⚖ 125 Pedidos Estratégicos ', 'background:#FACC15;color:#000;font-weight:900;font-size:14px;padding:4px 8px;border-radius:4px;');
   console.log('%cDesenvolvido com 🔥 por Antigravity', 'color:#94A3B8;font-size:11px;');
 
