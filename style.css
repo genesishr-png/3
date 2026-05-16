@@ -185,9 +185,10 @@ body {
 }
 
 .nav-physis-logo {
-  width: 85%;
-  height: 85%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.4); /* Zoom na árvore pura */
   transition: transform 0.3s var(--transition);
 }
 
@@ -1647,12 +1648,13 @@ body {
 .physis-tree {
   width: 240px;
   height: 240px;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 50%;
   background: rgba(255,255,255,0.06);
-  padding: 12px;
+  padding: 0; /* Removido padding para o zoom preencher tudo */
   border: 1px solid rgba(200,168,75,0.2);
   box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  transform: scale(1.1); /* Leve zoom no rodapé também */
 }
 
 .physis-text {
