@@ -322,7 +322,7 @@ body {
   letter-spacing: -0.02em;
 }
 
-.title-line { display: block; overflow: hidden; }
+.title-line { display: block; }
 
 .highlight-word {
   background: var(--gradient-brand);
