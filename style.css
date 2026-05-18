@@ -1716,7 +1716,8 @@ body {
 
 /* ===================== BONUS SECTION ===================== */
 .bonus-box {
-  margin-top: 40px;
+  max-width: 680px;
+  margin: 40px auto 0;
   padding: 30px;
   border: 1px solid rgba(250, 204, 21, 0.3);
   background: linear-gradient(135deg, rgba(20, 25, 45, 0.7) 0%, rgba(10, 15, 30, 0.8) 100%);
